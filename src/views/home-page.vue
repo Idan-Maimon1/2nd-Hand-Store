@@ -1,17 +1,17 @@
 
 <template>
     <section class="homepage-layout">
-        <tasks-table />
+        <product-list />
     </section>
 </template>
 
 <script>
 
-import tasksTable from '../components/tasks-table.vue'
+import productList from '../components/product-list.vue'
 
 export default {
     components: {
-        tasksTable,
+        productList,
     },
 }
 </script>
