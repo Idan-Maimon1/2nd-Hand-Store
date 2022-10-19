@@ -1,14 +1,17 @@
 <script >
 import { RouterLink, RouterView } from 'vue-router'
+import appHeader from './components/app-header.vue'
 
 export default {
   components: {
     RouterLink,
-    RouterView
+    RouterView,
+    appHeader
   },
 }
 </script>
 
 <template>
+  <app-header />
   <RouterView />
 </template>
