@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomePage from '../views/home-page.vue'
+import productsPage from '../views/products-page.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -7,8 +7,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomePage
+      name: 'productsPage',
+      component: productsPage
     },
   ]
 })

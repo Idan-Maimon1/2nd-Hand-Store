@@ -13,5 +13,7 @@ export default {
 
 <template>
   <app-header />
-  <RouterView />
+  <section class="page-content-layout">
+    <RouterView />
+  </section>
 </template>

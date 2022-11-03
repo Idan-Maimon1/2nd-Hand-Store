@@ -1,6 +1,6 @@
 
 <template>
-    <section class="homepage-layout">
+    <section class="products-page-layout">
         <product-list />
     </section>
 </template>
