@@ -68,6 +68,7 @@ body {
 }
 
 .header-logo-cont {
+    margin-left: 2.3vw;
     color: rgba(81, 81, 81, 0.942);
     display: flex;
     align-items: center;
@@ -97,10 +98,18 @@ body {
 }
 
 .product-list-layout {
+    display: flex;
     width: calc(100% - 64px);
     height: calc(100% - 32px);
     padding: 16px 32px;
     padding-top: 0;
+    margin-top: 24px;
+    column-gap: 2.5vw;
+}
+
+.side-filters-layout {
+    width: 24vw;
+    background-color: aqua;
 }
 
 .product-list-cont {
@@ -108,7 +117,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     row-gap: 32px;
-    margin-top: 24px;
     width: 100%;
 }
 
