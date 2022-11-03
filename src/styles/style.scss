@@ -50,11 +50,14 @@ body {
 }
 
 .app-header-cont {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 2vw;
     border-bottom: 1px solid #ded7d799;
     position: fixed;
     background-color: white;
-    padding: 20px 32px;
-    height: calc(10vh - 40px);
+    padding: 0px 32px;
+    height: 10vh;
     width: calc(100vw - 64px);
 }
 
@@ -68,19 +71,19 @@ body {
 }
 
 .header-logo-cont {
-    margin-left: 2.3vw;
     color: rgba(81, 81, 81, 0.942);
     display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 28px;
     font-family: roboto;
     letter-spacing: -0.5px;
-    width: fit-content;
+    width: 100%;
     height: 100%;
 
     img {
         position: relative;
-        margin-right: 15px;
+        margin-right: 12px;
         margin-top: 0.5vh;
         top: 5px;
         z-index: 1;
@@ -88,6 +91,7 @@ body {
     }
 
     div {
+        padding-right: 5px;
         z-index: 2;
     }
 
@@ -98,32 +102,33 @@ body {
 }
 
 .product-list-layout {
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 2vw;
     width: calc(100% - 64px);
     height: calc(100% - 32px);
     padding: 16px 32px;
     padding-top: 0;
-    margin-top: 24px;
-    column-gap: 2.5vw;
+    margin-top: 30px;
 }
-
-.side-filters-layout {
-    width: 24vw;
-    background-color: aqua;
+.side-filters-cont {
+    position: fixed;
+    height: 83.4%;
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgb(66 64 171 / 8%);
 }
 
 .product-list-cont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 32px;
-    width: 100%;
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: repeat(5,1fr);
 }
 
 .product-preview-layout {
     display: flex;
     border-radius: 16px;
-    width: 14vw;
+    width: 100%;
     aspect-ratio: 1/1;
     background-color: white;
     box-shadow: -2px 4px 19px 4px rgb(217 217 217 / 58%);

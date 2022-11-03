@@ -2,6 +2,8 @@
 <template>
     <section class="product-list-layout">
         <section class="side-filters-layout">
+            <section class="side-filters-cont">
+            </section>
         </section>
         <div class="product-list-cont">
             <product-preview v-for="a in 30" />
