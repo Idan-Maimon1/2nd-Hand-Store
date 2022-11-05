@@ -1,0 +1,17 @@
+
+.product-list-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 2vw;
+    width: calc(100% - 64px);
+    height: calc(100% - 32px);
+    padding: 16px 32px;
+    padding-top: 0;
+    margin-top: 30px;
+}
+
+.product-list-cont {
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: repeat(3, 1fr);
+}

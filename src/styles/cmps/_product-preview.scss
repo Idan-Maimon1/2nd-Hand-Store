@@ -1,0 +1,15 @@
+
+.product-preview-layout {
+    display: flex;
+    border-radius: 16px;
+    width: 100%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    box-shadow: -2px 4px 19px 4px rgb(217 217 217 / 58%);
+    transition: 230ms;
+
+    &:hover {
+        box-shadow: -2px 4px 19px 4px rgb(194 185 185 / 58%);
+        cursor: pointer;
+    }
+}
