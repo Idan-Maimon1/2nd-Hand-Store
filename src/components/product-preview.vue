@@ -1,6 +1,6 @@
 
 <template>
     <section class="product-preview-layout">
-    <a href=""></a>    
+        <a href=""></a>
     </section>
 </template>
