@@ -1,4 +1,3 @@
-
 .product-list-layout {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -14,4 +13,5 @@
     display: grid;
     gap: 2vw;
     grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 12px;
 }

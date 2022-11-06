@@ -17,11 +17,11 @@
 }
 
 .header-logo-cont {
-    color: rgba(81, 81, 81, 0.942);
+    color: #4d5964;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 28px;
+    font-size: 24px;
     font-family: roboto;
     letter-spacing: -0.5px;
     width: 100%;
@@ -29,11 +29,10 @@
 
     img {
         position: relative;
-        margin-right: 12px;
-        margin-top: 0.5vh;
-        top: 5px;
+        margin-right: 4px;
+        top: 3.5px;
         z-index: 1;
-        height: 60px;
+        height: 35px;
     }
 
     div {
@@ -42,25 +41,37 @@
     }
 
     span {
-        font-size: 1.2em;
-        color: #7f63fa;
+        font-size: 1.15em;
+        color: #896cfd;
     }
 }
 
 .app-header-main-content {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+.search-bar-layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.search-bar-cont {
     justify-content: center;
+    grid-column: 2;
+    align-items: center;
+    height: 100%;
+    display: flex;
 
     input {
-        font-size: 16px;
-        width: 30%;
+        font-size: 16.5px;
         border-radius: 15px;
-        padding: 3px 15px;
+        padding: 3px 14px;
         height: 30px;
-        padding-right: 10px;
-        &::placeholder{
-            color: rgb(108, 107, 132);
+        width: 70%;
+        min-width: 200px;
+
+        &::placeholder {
+            color: rgba(108, 107, 132, 0.775);
         }
     }
 
@@ -68,12 +79,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 25px;
+        margin-top: 28px;
         cursor: pointer;
         border-radius: 50%;
-        margin-left: -17px;
+        margin-left: -17.5px;
         height: 30px;
         aspect-ratio: 1/1;
-        background-color: rgb(160, 148, 255);
+        background-color: rgb(174, 164, 250);
+        transition: 500ms;
+
+        &:hover {
+            background-color: rgb(153, 141, 244);
+        }
     }
 }

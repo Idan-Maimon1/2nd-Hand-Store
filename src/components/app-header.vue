@@ -7,8 +7,13 @@
                 <div><span>2</span>ndHand</div>
             </section>
             <section class="app-header-main-content">
-                <input type="text" placeholder="What are you looking for?">
-           <button><img src="../../public/search-icon.svg" alt=""></button>
+                <div class="search-bar-layout">
+                    <div class="search-bar-cont">
+                        <input type="text" placeholder="What are you looking for?">
+                        <button><img src="../../public/search-icon.svg" alt=""></button>
+                    </div>
+                </div>
+                <div class="mmm"></div>
             </section>
         </section>
     </section>
