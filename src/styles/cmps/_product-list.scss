@@ -1,6 +1,5 @@
 .product-list-layout {
     display: grid;
-    grid-template-columns: 300px 1fr;
     column-gap: 2vw;
     width: calc(100% - 64px);
     height: calc(100% - 32px);
