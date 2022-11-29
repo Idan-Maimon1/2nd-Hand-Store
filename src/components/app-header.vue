@@ -13,7 +13,7 @@
                         <button><img src="../../public/search-icon.svg" alt=""></button>
                     </div>
                 </div>
-                <div class="mmm"></div>
+                <div class="nav"></div>
             </section>
         </section>
     </section>
