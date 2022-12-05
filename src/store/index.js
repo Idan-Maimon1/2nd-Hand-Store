@@ -1,5 +1,5 @@
 import { createStore } from 'vuex'
-import stayModule from './modules/stay-module.js'
+import productModule from './modules/product-module.js'
 
 const store = createStore({
   strict: true,
@@ -8,7 +8,7 @@ const store = createStore({
   mutations: {},
   actions: {},
   modules: {
-    stayModule
+    productModule
   },
 })
 
