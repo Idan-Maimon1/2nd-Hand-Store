@@ -5,8 +5,9 @@
                 <img :src="getSelectedImgUrl()">
             </div>
             <section class="unselected-imgs">
-                <img @click="selectedImgIdx = idx" v-for="(currImg, idx) in currProduct.imgs"
-                    :src="getImgUrl(currImg)" :class="idx === selectedImgIdx ? 'selected-img' : 'unselected-img'" :key="currImg">
+                <img @click="selectedImgIdx = idx" v-for="(currImg, idx) in currProduct.imgs.slice(0, 4)"
+                    :src="getImgUrl(currImg)" :class="idx === selectedImgIdx ? 'selected-img' : 'unselected-img'"
+                    :key="currImg">
             </section>
         </section>
         <section class="product-info">

@@ -1,5 +1,6 @@
-
 .product-preview-layout {
+    overflow: hidden;
+    position: relative;
     display: flex;
     border-radius: 16px;
     width: 100%;
@@ -11,5 +12,54 @@
     &:hover {
         box-shadow: -2px 4px 19px 4px rgb(194 185 185 / 58%);
         cursor: pointer;
+
+        .product-min-info {
+            height: 40%;
+            background: #00000087;
+        }
+
+        .min-info-city {
+            opacity: 1 !important;
+            bottom: 3px;
+        }
     }
+
+    img {
+        border-radius: 16px;
+        max-width: 100%;
+    }
+}
+
+.product-min-info {
+    display: grid;
+    padding: 0 10px;
+    height: 27%;
+    width: calc(100% - 20px);
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    background: rgb(0 0 0 / 34%);
+    text-align: center;
+    color: white;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    transition: 500ms;
+}
+
+.min-info-price {
+    width: fit-content;
+    position: absolute;
+    bottom: 3px;
+    right: 10px;
+    font-size: 16px;
+    color: #dceed7;
+}
+
+.min-info-city {
+    width: fit-content;
+    position: absolute;
+    bottom: -50%;
+    left: 10px;
+    font-size: 16px;
+    transition: 450ms;
 }
