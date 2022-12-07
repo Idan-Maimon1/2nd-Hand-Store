@@ -14,7 +14,7 @@
         cursor: pointer;
 
         .product-min-info {
-            height: 40%;
+            height: 44%;
             background: #00000087;
         }
 
@@ -33,9 +33,9 @@
 .product-min-info {
     display: grid;
     padding: 0 10px;
-    height: 27%;
+    height: 29%;
     width: calc(100% - 20px);
-    font-size: 14px;
+    font-size: 1.1em;
     position: absolute;
     bottom: 0;
     background: rgb(0 0 0 / 34%);
@@ -51,7 +51,6 @@
     position: absolute;
     bottom: 3px;
     right: 10px;
-    font-size: 16px;
     color: #dceed7;
 }
 
@@ -60,6 +59,5 @@
     position: absolute;
     bottom: -50%;
     left: 10px;
-    font-size: 16px;
     transition: 450ms;
 }

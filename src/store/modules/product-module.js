@@ -9,15 +9,16 @@ export default {
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Assumenda, commodi recusandae officia suscipit voluptatibus aut soluta! Repudiandae eaque quam facere esse assumenda facilis suscipit.Alias vero error magni ab quam.",
       seller: { _id: "demoSeller", name: "demoseller", phone: "0541111111", }
     }, {
-      _id: "demoProd2", condition: "new", title: "product2 title", price: "25$",
-      imgs: ["imgSrc", "imgSrc2", "imgSrc3"], tags: ["demotag", "demotag2", "demotag3"],
-      category: "category", location: { country: "country", city: "city", },
-      description: "desc", seller: { _id: "demoSeller", name: "demoseller", phone: "0541111111", }
+      _id: "demoProd2", condition: "new", title: "Vertical mouse", price: "26$",
+      imgs: ["vertical-mouse.jpg", "vertical-mouse2.jpg", "vertical-mouse3.jpg", "vertical-mouse4.jpg"], tags: ["mouse", "tech", "bluetooth"],
+      category: "mouses & keyboards", location: { country: "israel", city: "haifa", },
+      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sed animi molestias quia ad ex necessitatibus expedita consequatur recusandae deserunt, at error porro architecto aspernatur provident neque eum impedit dolore.",
+      seller: { _id: "demoSeller", name: "demoseller", phone: "0541111111", }
     }, {
-      _id: "demoProd3", condition: "new", title: "product3 title", price: "45$",
-      imgs: ["imgSrc", "imgSrc2", "imgSrc3"], tags: ["demotag", "demotag2", "demotag3"],
-      category: "category", location: { country: "country", city: "city", },
-      description: "desc", seller: { _id: "demoSeller", name: "demoseller", phone: "0541111111", }
+      _id: "demoProd3", condition: "as new", title: "metal-detector", price: "90$",
+      imgs: ["metal-detector.jpg", "metal-detector2.jpg", "metal-detector3.jpg", "metal-detector4.jpg"], tags: ["demotag", "demotag2", "demotag3"],
+      category: "hobbies", location: { country: "israel", city: "ashkelon", },
+      description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere et rerum, nesciunt aliquid quos laudantium possimus? Voluptate, exercitationem, facilis saepe rem error modi fugit optio necessitatibus maxime dolorem consequuntur tenetur", seller: { _id: "demoSeller", name: "demoseller", phone: "0541111111", }
     }]
   },
   getters: {

@@ -23,7 +23,7 @@
         height: 100%;
         margin: auto;
         border-radius: 32px;
-        animation: 0.4s ease-in 0s 1 fadeIn ;
+        animation: 0.4s ease-in 0s 1 fadeIn;
         box-shadow: 5px 4px 13px 2px rgb(166 164 177 / 45%);
     }
 }
@@ -48,6 +48,7 @@
     height: 12vh;
     cursor: pointer;
     transition: 250ms;
+    aspect-ratio: 1/1;
 
     &:hover {
         outline-color: transparent;
