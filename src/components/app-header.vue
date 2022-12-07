@@ -2,7 +2,7 @@
 <template>
     <section class="app-header-layout">
         <section class="app-header-cont grid-layout">
-            <section class="header-logo-cont pointer" @click.prevent="showHomePage()">
+            <section class="header-logo-cont pointer" @click.prevent="showProductsPage()">
                 <img src="/trade-icon.svg" alt="">
                 <div><span>2</span>ndHand</div>
             </section>
@@ -10,7 +10,7 @@
                 <div class="search-bar-layout">
                     <div class="search-bar-cont">
                         <input type="text" placeholder="What are you looking for?">
-                        <button><img src="../../public/search-icon.svg" alt=""></button>
+                        <button><img src="/search-icon.svg" alt=""></button>
                     </div>
                 </div>
                 <div class="nav"></div>
@@ -21,7 +21,7 @@
 <script>
 export default {
     methods: {
-        showHomePage() {
+        showProductsPage() {
             this.$router.push({ path: "/" })
         },
     }

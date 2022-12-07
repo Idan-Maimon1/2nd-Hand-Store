@@ -6,6 +6,7 @@
 
 .app-header-cont {
     display: grid;
+    z-index: 2;
     column-gap: 2vw;
     border-bottom: 1px solid #ded7d799;
     position: fixed;
