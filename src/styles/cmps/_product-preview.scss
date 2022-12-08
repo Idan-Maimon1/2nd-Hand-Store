@@ -15,12 +15,16 @@
 
         .product-min-info {
             height: 44%;
-            background: #00000087;
+            background: rgb(21 20 20 / 54%);
         }
 
         .min-info-city {
             opacity: 1 !important;
             bottom: 3px;
+        }
+
+        .product-date {
+            top: 0;
         }
     }
 
@@ -28,6 +32,21 @@
         border-radius: 16px;
         max-width: 100%;
     }
+}
+.min-info-title{
+    padding-top: 2px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.product-date {
+    position: absolute;
+    font-size: 1em;
+    top: -25px;
+    color: white;
+    text-align: center;
+    background: rgb(160 138 245);
+    width: 100%;
+    transition: 350ms;
 }
 
 .product-min-info {
@@ -38,7 +57,7 @@
     font-size: 1.1em;
     position: absolute;
     bottom: 0;
-    background: rgb(0 0 0 / 34%);
+    background: rgb(0 0 0 / 28%);
     text-align: center;
     color: white;
     border-bottom-left-radius: 16px;
@@ -55,7 +74,10 @@
 }
 
 .min-info-city {
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
     width: fit-content;
+    font-size: 0.95rem;
     position: absolute;
     bottom: -50%;
     left: 10px;

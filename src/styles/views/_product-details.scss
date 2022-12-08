@@ -23,7 +23,7 @@
         height: 100%;
         margin: auto;
         border-radius: 32px;
-        animation: 0.4s ease-in 0s 1 fadeIn;
+        animation: 0.3s ease-in 0s 1 fadeIn;
         box-shadow: 5px 4px 13px 2px rgb(166 164 177 / 45%);
     }
 }
@@ -44,14 +44,14 @@
 
 .unselected-img {
     border-radius: 50%;
-    outline: 1px solid #00000026;
+    outline: 0px solid rgb(171 153 240);
     height: 12vh;
     cursor: pointer;
     transition: 250ms;
     aspect-ratio: 1/1;
 
     &:hover {
-        outline-color: transparent;
         box-shadow: 3px 3px 9px 1px #72717c61;
+        outline-width: 1.2vw;
     }
 }

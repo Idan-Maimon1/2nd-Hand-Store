@@ -1,3 +1,19 @@
+@media screen and (min-width:1530px) {
+    .product-min-info {
+        height: 3.4vw;
+    }
+
+    .product-preview-layout:hover {
+        .product-min-info {
+            height: 5.2vw;
+        }
+    }
+
+    .product-date {
+        font-size: 1.3em;
+    }
+}
+
 @media screen and (min-width:1168px) {
     .product-list-cont {
         grid-template-columns: repeat(5, 1fr);
