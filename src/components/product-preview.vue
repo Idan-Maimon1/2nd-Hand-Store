@@ -1,7 +1,7 @@
 
 <template>
     <section class="product-preview-layout" @click.prevent="showDetails">
-        <img :src="getImgUrl(currProduct.imgs[0])">
+        <img :src="getImgUrl(currProduct.imgs[2])">
         <div class="product-date">{{ getEditedAtDate }}</div>
         <div class="product-min-info">
             <div class="min-info-title">{{ currProduct.title }}</div>
