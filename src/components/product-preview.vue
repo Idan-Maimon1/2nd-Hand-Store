@@ -36,7 +36,7 @@ export default {
             this.$router.push({ path: `/product/${this.currProduct._id}` })
         },
         getImgUrl(imgName) {
-            return new URL("../assets/imgs/" + imgName, import.meta.url)
+            return new URL("https://res.cloudinary.com/dipjgyi1r/image/upload/v1670645003/2nd-hand/" + imgName, import.meta.url)
         },
     },
     created() {

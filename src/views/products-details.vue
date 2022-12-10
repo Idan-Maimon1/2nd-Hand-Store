@@ -30,10 +30,10 @@ export default {
     },
     methods: {
         getImgUrl(imgName) {
-            return new URL("../assets/imgs/" + imgName, import.meta.url)
+            return new URL("https://res.cloudinary.com/dipjgyi1r/image/upload/v1670645003/2nd-hand/" + imgName, import.meta.url)
         },
         getSelectedImgUrl() {
-            return new URL("../assets/imgs/" + this.currProduct.imgs[this.selectedImgIdx], import.meta.url)
+            return new URL("https://res.cloudinary.com/dipjgyi1r/image/upload/v1670645003/2nd-hand/" + this.currProduct.imgs[this.selectedImgIdx], import.meta.url)
         },
     }
 }
