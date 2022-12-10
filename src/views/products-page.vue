@@ -1,7 +1,7 @@
 
 <template>
     <section class="products-page-layout">
-        <product-list :products="products"/>
+        <product-list :products="products" />
     </section>
 </template>
 
@@ -18,7 +18,8 @@ export default {
     components: {
         productList,
     },
-    created() {
+    async created() {
+        await this.$store.dispatch({ type: 'loadProducts' })
         this.products = this.$store.getters.products
     }
 }
