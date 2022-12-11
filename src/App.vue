@@ -8,6 +8,9 @@ export default {
     RouterView,
     appHeader
   },
+  async created() {
+    await this.$store.dispatch({ type: 'loadProducts' })
+  }
 }
 </script>
 

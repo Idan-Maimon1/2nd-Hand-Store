@@ -22,6 +22,13 @@ export default {
     async loadProducts({ commit }) {
       var products = await productService.query()
       commit({ type: 'setProducts', products })
+    },
+    async getProductById(state, { productId }) {
+      try {
+        return await productService.getProductById(productId)
+      } catch (err) {
+        console.log(err)
+      }
     }
   }
 }

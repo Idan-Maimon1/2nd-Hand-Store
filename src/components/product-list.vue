@@ -14,11 +14,9 @@ import sideFilters from './side-filters.vue';
 import productPreview from './product-preview.vue'
 
 export default {
-    props: {
-        products: Object,
+    computed: {
+        products() { return this.$store.getters.products },
     },
-    data() { return {} },
-    computed: {},
     methods: {},
     created() { },
     components: {

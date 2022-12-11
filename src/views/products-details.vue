@@ -25,12 +25,12 @@ export default {
         return {
             selectedImgIdx: 0,
             currProdId: "",
-            currProduct: [],
+            currProduct: null,
         }
     },
     async created() {
         this.currProdId = this.$route.params.id
-        this.currProduct = this.$store.getters.productById(this.currProdId)
+        await this.getProductById(this.currProdId)
     },
     methods: {
         getImgUrl(imgName) {
@@ -38,6 +38,16 @@ export default {
         },
         getSelectedImgUrl() {
             return new URL("https://res.cloudinary.com/dipjgyi1r/image/upload/v1670645003/2nd-hand/" + this.currProduct.imgs[this.selectedImgIdx], import.meta.url)
+        },
+        async getProductById(productId) {
+            try {
+                this.currProduct = await this.$store.dispatch({
+                    type: 'getProductById',
+                    productId,
+                })
+            } catch (err) {
+                console.log(err);
+            }
         },
     }
 }
