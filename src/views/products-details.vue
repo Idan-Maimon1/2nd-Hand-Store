@@ -1,21 +1,23 @@
 <template>
     <section class="details-layout">
         <section class="details-imgs-cont">
-            <div class="selected-img-cont">
-                <img :src="getSelectedImgUrl()">
+            <div class="details-imgs-display">
+                <img class="main-selected-img" :src="getSelectedImgUrl()">
+                <section class="unselected-imgs">
+                    <img @click="selectedImgIdx = idx" v-for="(currImg, idx) in currProduct.imgs.slice(0, 4)"
+                        :src="getImgUrl(currImg)" :class="idx === selectedImgIdx ? 'selected-img' : 'unselected-img'"
+                        :key="currImg">
+                </section>
             </div>
-            <section class="unselected-imgs">
-                <img @click="selectedImgIdx = idx" v-for="(currImg, idx) in currProduct.imgs.slice(0, 4)"
-                    :src="getImgUrl(currImg)" :class="idx === selectedImgIdx ? 'selected-img' : 'unselected-img'"
-                    :key="currImg">
-            </section>
         </section>
         <section class="product-info">
             {{ currProduct }}
         </section>
     </section>
 </template>
+
 <script>
+
 export default {
     data() {
         return {
