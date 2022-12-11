@@ -1,17 +1,19 @@
 <template>
-    <section class="details-layout">
-        <section class="details-imgs-cont">
-            <div class="details-imgs-display">
-                <img class="main-selected-img" :src="getSelectedImgUrl()">
-                <section class="unselected-imgs">
-                    <img @click="selectedImgIdx = idx" v-for="(currImg, idx) in currProduct.imgs.slice(0, 4)"
-                        :src="getImgUrl(currImg)" :class="idx === selectedImgIdx ? 'selected-img' : 'unselected-img'"
-                        :key="currImg">
-                </section>
-            </div>
-        </section>
-        <section class="product-info">
-            {{ currProduct }}
+    <section class="details-main-cont">
+        <section class="details-layout">
+            <section class="details-imgs-cont">
+                <div class="details-imgs-display">
+                    <img class="main-selected-img" :src="getSelectedImgUrl()">
+                    <section class="unselected-imgs">
+                        <img @click="selectedImgIdx = idx" v-for="(currImg, idx) in currProduct.imgs.slice(0, 4)"
+                            :src="getImgUrl(currImg)"
+                            :class="idx === selectedImgIdx ? 'selected-img' : 'unselected-img'" :key="currImg">
+                    </section>
+                </div>
+            </section>
+            <section class="product-info">
+                {{ currProduct }}
+            </section>
         </section>
     </section>
 </template>

@@ -1,18 +1,18 @@
-.details-layout {
-    height: 89vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.details-main-cont {
+    display: flex;
     align-items: center;
-    padding: 0 32px;
+    height: 89vh;
 }
 
-.product-info {
-    height: 60vh;
+.details-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    height: fit-content;
+    padding: 0 32px;
 }
 
 .details-imgs-cont {
     position: relative;
-    height: 60vh;
 }
 
 .details-imgs-display {
@@ -35,7 +35,7 @@
     width: 100%;
     justify-content: space-evenly;
     display: flex;
-    bottom: -36px;
+    bottom: -11%;
     left: 50%;
     transform: translateX(-50%);
 
