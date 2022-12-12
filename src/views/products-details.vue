@@ -17,22 +17,23 @@
                     {{ currProduct.title }}
                 </div>
                 <section class="product-info-cont">
-                    <div class="product-info-condition">
-                        <span>condition</span> {{ currProduct.condition }}
+                    <div class="product-info-location">
+                        <span> location</span> {{ currProduct.location.city }}, {{ currProduct.location.country }}
                     </div>
+
                     <div class="product-info-price">
                         <span>price</span> {{ currProduct.price }}
                     </div>
-                    <div class="product-info-date">
-                        <span> last updated at </span>{{ getEditedAtDate }}
+                    <div class="product-info-condition">
+                        <span>condition</span> {{ currProduct.condition }}
                     </div>
                     <div class="product-info-description">
                         <span> product description</span> {{ fitDescription(currProduct.description) }}
                         <button @click="isDescriptionModal = true" class="description-btn"><img
                                 src="../assets/imgs/eye.svg" alt=""> Read more</button>
                     </div>
-                    <div class="product-info-location">
-                        <span> location</span> {{ currProduct.location.city }}, {{ currProduct.location.country }}
+                    <div class="product-info-date">
+                        <span> last updated at </span>{{ getEditedAtDate }}
                     </div>
                     <div class="product-info-seller">
                         <div><span> seller info</span></div>
