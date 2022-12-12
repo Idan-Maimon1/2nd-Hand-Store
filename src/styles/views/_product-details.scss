@@ -58,7 +58,17 @@
     }
 }
 
+.details-bkg {
+    position: absolute;
+    height: 380px;
+    z-index: -2;
+    left: 45%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+}
+
 .product-info {
+    position: relative;
     color: #655d6b;
     font-family: Helvetica, sans-serif;
     font-size: 1.3em;
@@ -80,9 +90,9 @@
 .product-info-description {
     width: 70%;
     padding: 8px 10px;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 10px;
-    background: white;
+    background: rgba(255, 255, 255, 0.073);
     font-size: 0.8em;
 }
 

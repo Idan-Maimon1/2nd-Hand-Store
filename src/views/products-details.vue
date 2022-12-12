@@ -12,6 +12,7 @@
                 </div>
             </section>
             <section class="product-info">
+                <img class="details-bkg" src="../assets/imgs/splash.svg" alt="">
                 <div class="product-info-title">
                     {{ currProduct.title }}
                 </div>
@@ -27,7 +28,8 @@
                     </div>
                     <div class="product-info-description">
                         <span> product description</span> {{ fitDescription(currProduct.description) }}
-                        <button @click="isDescriptionModal = true" class="description-btn"><img src="../assets/imgs/eye.svg" alt=""> Read more</button>
+                        <button @click="isDescriptionModal = true" class="description-btn"><img
+                                src="../assets/imgs/eye.svg" alt=""> Read more</button>
                     </div>
                     <div class="product-info-location">
                         <span> location</span> {{ currProduct.location.city }}, {{ currProduct.location.country }}
@@ -42,7 +44,7 @@
         </section>
         <description-modal v-if="this.isDescriptionModal" :description="currProduct.description"
             @close="isDescriptionModal = false"></description-modal>
-            <div class="contact-seller"><img src="../assets/imgs/whatsapp.svg" alt=""></div>
+        <div class="contact-seller" @click="redirectToWhatsapp"><img src="../assets/imgs/whatsapp.svg" alt=""></div>
     </section>
 </template>
 
@@ -86,6 +88,9 @@ export default {
                 return str.slice(0, 100) + "..."
             }
             return
+        },
+        redirectToWhatsapp() {
+            window.open('https://wa.me/' + this.currProduct.seller.phone, '_blank')
         }
     },
     computed: {
