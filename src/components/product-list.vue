@@ -3,7 +3,7 @@
     <section class="product-list-layout grid-layout">
         <side-filters />
         <div class="product-list-cont">
-            <product-preview :key="currProduct" v-for="(currProduct,idx) in products" :currProduct="currProduct" />
+            <product-preview :key="currProduct" v-for="(currProduct) in products" :currProduct="currProduct" />
         </div>
     </section>
 </template>
@@ -14,8 +14,11 @@ import sideFilters from './side-filters.vue';
 import productPreview from './product-preview.vue'
 
 export default {
+    data() {
+        return {}
+    },
     computed: {
-        products() { return this.$store.getters.products },
+        products() { return this.$store.getters.products }
     },
     methods: {},
     created() { },

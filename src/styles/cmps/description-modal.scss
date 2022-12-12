@@ -1,0 +1,63 @@
+.description-modal-layout {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+    width: 100vw;
+    background-color: #1c181e7a;
+    z-index: 10;
+    top: 0;
+    cursor: pointer;
+}
+
+.description-modal-cont {
+    z-index: 100;
+    position: fixed;
+    border-radius: 1.5vh;
+    border: 3px solid;
+    overflow: hidden;
+    min-height: 50vh;
+    height: fit-content;
+    width: 40vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    background-color: white;
+    animation: 0.2s ease-in 0s 1 fadeIn;
+}
+
+.description-modal-header {
+    border-bottom: 2px solid;
+    height: 10%;
+    background: #c7b4e4;
+    align-items: center;
+    display: flex;
+    padding: 10px 3.5%;
+
+    svg {
+        height: 20px;
+        padding: 4px;
+        border-radius: 50%;
+        border: 2px solid rgb(18, 17, 17);
+        transition: 0.3s;
+        background-color: white;
+
+        &:hover {
+            cursor: pointer;
+            height: 25px;
+            padding: 1.5px;
+        }
+    }
+}
+
+.description-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 22px;
+}
+
+.description-modal-content {
+    padding: 9vh 2.5vw;
+    font-size: 1.5em;
+}
