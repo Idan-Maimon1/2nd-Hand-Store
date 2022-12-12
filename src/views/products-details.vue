@@ -63,7 +63,6 @@ export default {
     async created() {
         this.currProdId = this.$route.params.id
         await this.getProductById(this.currProdId)
-        console.log('currProuct: ', typeof this.currProduct.description)
     },
     methods: {
         getImgUrl(imgName, isSelectedImg = false) {
