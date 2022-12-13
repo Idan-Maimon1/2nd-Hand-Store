@@ -133,9 +133,15 @@
     }
 
     .product-date {
-        top: 0;
-        font-size: 1.2em;
-        background-color: rgb(160 138 245 / 93%);
+        background: rgba(255, 255, 255, 0.631372549);
+        color: #4d4646;
+        font-family: sans-serif;
+        padding: 5px;
+        width: unset;
+        bottom: 32%;
+        top: unset;
+        right: 0;
+        border-top-left-radius: 10px;
     }
 
     .min-info-city {
@@ -303,7 +309,8 @@
     .details-main-cont {
         padding-top: calc(10vh + 3px);
     }
-    .unselected-imgs{
+
+    .unselected-imgs {
         bottom: -5.5%;
         left: 25%;
         width: 50%;
