@@ -89,6 +89,24 @@
         border: 3px solid black;
     }
 
+    .product-preview-layout:hover {
+        box-shadow: -2px 4px 19px 4px rgb(194 185 185 / 58%);
+        cursor: pointer;
+
+        .product-min-info {
+            height: 44%;
+            background: rgb(21 20 20 / 54%);
+        }
+
+        .min-info-city {
+            opacity: 1 !important;
+            bottom: 3px;
+        }
+
+        .product-date {
+            top: 0;
+        }
+    }
 }
 
 @media screen and (max-width:654px) {

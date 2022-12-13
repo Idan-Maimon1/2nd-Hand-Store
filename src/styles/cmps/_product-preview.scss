@@ -9,35 +9,18 @@
     box-shadow: -2px 4px 19px 4px rgb(217 217 217 / 58%);
     transition: 230ms;
 
-    &:hover {
-        box-shadow: -2px 4px 19px 4px rgb(194 185 185 / 58%);
-        cursor: pointer;
-
-        .product-min-info {
-            height: 44%;
-            background: rgb(21 20 20 / 54%);
-        }
-
-        .min-info-city {
-            opacity: 1 !important;
-            bottom: 3px;
-        }
-
-        .product-date {
-            top: 0;
-        }
-    }
-
     img {
         border-radius: 16px;
         max-width: 100%;
     }
 }
-.min-info-title{
+
+.min-info-title {
     padding-top: 2px;
     text-transform: capitalize;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .product-date {
     position: absolute;
     font-size: 1em;
