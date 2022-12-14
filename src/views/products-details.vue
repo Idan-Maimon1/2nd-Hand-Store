@@ -12,7 +12,7 @@
                 </div>
             </section>
             <section class="product-info">
-                <img class="details-bkg" src="../assets/imgs/splash.svg" alt="">
+                <img class="details-bkg" src="../../public/trade-icon2.svg" alt="">
                 <div class="product-info-title">
                     {{ currProduct.title }}
                 </div>

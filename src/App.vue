@@ -17,6 +17,10 @@ export default {
 <template>
   <app-header />
   <section class="page-content-layout">
-    <RouterView />
+    <RouterView v-slot="{ Component }">
+      <transition name="route" mode="out-in">
+        <component :is="Component"></component>
+      </transition>
+    </RouterView>
   </section>
 </template>
