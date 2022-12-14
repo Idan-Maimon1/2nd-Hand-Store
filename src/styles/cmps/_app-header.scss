@@ -45,6 +45,14 @@
     }
 }
 
+.gray-outline .header-logo-cont {
+    justify-content: unset;
+
+    div {
+        display: block;
+    }
+}
+
 .app-header-main-content {
     display: grid;
     grid-template-columns: 5fr 1fr;

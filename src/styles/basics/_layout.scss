@@ -85,6 +85,9 @@
 }
 
 @media screen and (min-width:654px) {
+    .landing-page-main-content{
+        font-size: 1.75rem !important;
+    }
     .details-imgs-display img {
         border: 3px solid black;
     }
@@ -318,6 +321,10 @@
 }
 
 @media screen and (max-width:540px) {
+    .landing-page-main-content {
+        font-size: 1rem !important;
+    }
+
     .details-imgs-display .main-selected-img {
         width: 100%;
         border-radius: 0;
