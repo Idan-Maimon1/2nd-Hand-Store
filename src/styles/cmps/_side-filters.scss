@@ -1,8 +1,21 @@
-
 .side-filters-cont {
     position: fixed;
     height: 83.4%;
     width: 300px;
     border-radius: 15px;
-    background-color:#aea4fa;
+    background-color: #aea4fa;
+    // tt
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    div {
+        color: white;
+        cursor: pointer;
+        transition: 0.25s;
+
+        &:hover {
+            color: black;
+        }
+    }
 }

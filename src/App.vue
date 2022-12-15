@@ -9,7 +9,7 @@ export default {
     appHeader
   },
   async created() {
-    await this.$store.dispatch({ type: 'loadProducts' })
+    await this.$store.dispatch({ type: 'loadProducts', filter: false })
   }
 }
 </script>
