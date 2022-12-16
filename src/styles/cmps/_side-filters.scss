@@ -4,21 +4,10 @@
     width: 300px;
     border-radius: 15px;
     background-color: #aea4fa;
-    // tt
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
-    div {
-        color: white;
-        cursor: pointer;
-        transition: 0.25s;
-
-        &:hover {
-            color: black;
-        }
-    }
 }
 
 .side-filters-price {
@@ -52,6 +41,10 @@
         border-radius: 4px;
         color: #9c9090de;
         border: 0px solid rgb(255, 255, 255);
+
+        &:focus {
+            outline: 0px;
+        }
     }
 
     input[type='range' i] {
@@ -90,4 +83,44 @@
         margin: 0;
     }
 
+}
+
+.side-filters-categories {
+    width: calc(100% - 36px);
+    padding: 0 18px;
+
+    div {
+        cursor: pointer;
+        width: fit-content;
+        margin-bottom: 2.5px;
+        color: white;
+        transition: 0.3s;
+    }
+
+    .selected-category,
+    div:hover {
+        color: black;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        display: none;
+        margin: 1px 0 0 2px;
+    }
+
+    .selected-category svg {
+        height: 14px;
+        display: block;
+        stroke: rgb(63, 59, 59);
+        transition: 0.3s;
+        margin-left: 5px;
+
+        &:hover {
+            margin-top: 0;
+            stroke: red;
+            transform: scale(1.2);
+        }
+    }
 }

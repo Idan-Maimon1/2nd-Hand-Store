@@ -5,7 +5,7 @@
         <div class="product-date">{{ getEditedAtDate }}</div>
         <div class="product-min-info">
             <div class="min-info-title">{{ currProduct.title }}</div>
-            <div class="min-info-price">{{ currProduct.price }}</div>
+            <div class="min-info-price">{{ currProduct.price }}$</div>
             <div class="min-info-city">{{ currProduct.location.city }}</div>
         </div>
     </section>

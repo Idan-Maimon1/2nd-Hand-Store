@@ -3,7 +3,9 @@
     <section class="product-list-layout grid-layout">
         <side-filters />
         <div class="product-list-cont">
-            <product-preview :key="currProduct" v-for="(currProduct) in products" :currProduct="currProduct" />
+            <transition appear name="fade" v-for="(currProduct) in products">
+                <product-preview :key="currProduct" :currProduct="currProduct" />
+            </transition>
         </div>
     </section>
 </template>
@@ -24,7 +26,7 @@ export default {
     created() { },
     components: {
         productPreview,
-        sideFilters
+        sideFilters,
     },
 }
 </script>

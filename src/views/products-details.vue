@@ -12,7 +12,7 @@
                 </div>
             </section>
             <section class="product-info">
-                <img class="details-bkg" src="../../public/trade-icon2.svg" alt="">
+                <img class="details-bkg" src="/trade-icon2.svg" alt="">
                 <div class="product-info-title">
                     {{ currProduct.title }}
                 </div>
@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="product-info-price">
-                        <span>price</span> {{ currProduct.price }}
+                        <span>price</span> {{ currProduct.price }}$
                     </div>
                     <div class="product-info-condition">
                         <span>condition</span> {{ currProduct.condition }}
