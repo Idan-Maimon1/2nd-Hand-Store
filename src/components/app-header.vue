@@ -35,7 +35,6 @@ export default {
         }
     },
     created() {
-        this.products = this.$store.getters.products
     },
     methods: {
         showLandingPage() {
@@ -49,6 +48,9 @@ export default {
     },
     computed: {
         results() {
+            if (!this.products) {
+                this.products = this.$store.getters.products
+            }
             const resultsArray = this.products.filter(product => product.title.toLowerCase().includes(this.searchedTerm.toLowerCase()))
             return resultsArray.length > 7 ? resultsArray.splice(0, 7) : resultsArray
         }
