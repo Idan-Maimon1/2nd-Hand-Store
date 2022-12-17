@@ -18,7 +18,7 @@
 .header-logo-cont {
     color: #4d5964;
     display: flex;
-    justify-content: center;
+    padding-left: 2px;
     align-items: center;
     font-size: 24px;
     font-family: roboto;
@@ -65,7 +65,7 @@
 }
 
 .search-bar-cont {
-    justify-content: center;
+    position: relative;
     grid-column: 2;
     align-items: center;
     height: 100%;
@@ -76,8 +76,7 @@
         border-radius: 15px;
         padding: 3px 14px;
         height: 30px;
-        width: 70%;
-        min-width: 200px;
+        width: 200px;
 
         &::placeholder {
             color: rgba(108, 107, 132, 0.775);
@@ -99,6 +98,43 @@
 
         &:hover {
             background-color: rgb(153, 141, 244);
+        }
+    }
+}
+
+.search-results-cont {
+    position: absolute;
+    width: 229px;
+    height: fit-content;
+    z-index: -2;
+    top: 41px;
+    left: 2px;
+    padding-top: 14px;
+    background: rgba(255, 255, 255, 0.933);
+    outline: 2px solid rgba(77, 75, 75, 0.908);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-transform: capitalize;
+
+    div {
+        cursor: pointer;
+        font-size: 16px;
+        height: fit-content;
+        width: calc(100% - 28px);
+        padding: 8px 14px;
+        border-bottom: 1px solid rgba(68, 64, 64, 0.256);
+        color: #1c1e21f7;
+        transition: 0.15s;
+        font-family: sans-serif;
+
+        &:last-child {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        &:hover {
+            background-color: #896cfd;
+            color: white;
         }
     }
 }

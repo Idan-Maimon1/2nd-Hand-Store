@@ -70,7 +70,6 @@ export default {
             filterBy.minPrice = this.filter?.price?.min || 0
             filterBy.maxPrice = this.filter?.price?.max || 150
             this.$store.dispatch({ type: "setFilter", filterBy })
-            console.log('this.filter: ', this.filter)
             // this.setQuery(filterBy)
         },
         setQuery(query) {

@@ -10,8 +10,14 @@
             <section class="app-header-main-content">
                 <div class="search-bar-layout" v-if="this.$route.name !== 'landing-page'">
                     <div class="search-bar-cont">
-                        <input type="text" placeholder="What are you looking for?">
+                        <input type="text" placeholder="What are you looking for?" v-model="searchedTerm"
+                            @click="isSearch = true">
                         <button><img src="/search-icon.svg" alt=""></button>
+                        <div v-if="isSearch" class="search-results-cont">
+                            <div v-for="result in results" :key="result" @click="showDetailsPage(result._id)">
+                                {{ result.title }}
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="nav"></div>
@@ -23,16 +29,29 @@
 export default {
     data() {
         return {
+            products: '',
+            isSearch: false,
+            searchedTerm: '',
         }
     },
     created() {
+        this.products = this.$store.getters.products
     },
     methods: {
         showLandingPage() {
             this.$router.push({ path: "/" })
         },
+        showDetailsPage(productId) {
+            this.isSearch = false
+            this.$router.push({ path: `/product/${productId}` })
+        }
+
     },
     computed: {
+        results() {
+            const resultsArray = this.products.filter(product => product.title.toLowerCase().includes(this.searchedTerm.toLowerCase()))
+            return resultsArray.length > 7 ? resultsArray.splice(0, 7) : resultsArray
+        }
     }
 }
 </script>
