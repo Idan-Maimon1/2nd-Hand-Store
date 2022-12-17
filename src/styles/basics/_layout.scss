@@ -70,7 +70,16 @@
     }
 
     .side-filters-cont {
-        width: 200px;
+        width: 164px;
+    }
+
+    .side-filters-cont .side-filters-title {
+        font-size: 22px;
+    }
+
+    .side-filters-categories .selected-category,
+    .side-filters-categories div:hover {
+        padding: 0 6px;
     }
 
     .product-list-cont {
@@ -85,9 +94,10 @@
 }
 
 @media screen and (min-width:654px) {
-    .landing-page-main-content{
+    .landing-page-main-content {
         font-size: 1.75rem !important;
     }
+
     .details-imgs-display img {
         border: 3px solid black;
     }
@@ -189,12 +199,79 @@
         padding-top: 20px;
         height: 45px;
         width: 100%;
+        transition: 0.4s;
     }
 
     .side-filters-cont {
         height: 100%;
-        width: 100%;
+        width: calc(100% - 36px);
         position: unset;
+        padding: 0 18px;
+        transition: 0.1s;
+
+        .side-filters-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            transition: 0.1s;
+
+            svg {
+                display: block;
+                height: 14px;
+                fill: white;
+                stroke: white;
+                transition: 0.3s;
+            }
+        }
+
+        .side-filters-categories,
+        .side-filters-price {
+            display: none;
+            transition: 0.1s;
+        }
+    }
+
+    .side-filters-big-layout {
+        height: 200px;
+
+        .side-filters-categories,
+        .side-filters-price {
+            display: grid;
+            height: 85%;
+        }
+
+        .side-filters-cont {
+            display: grid;
+            grid-template-columns: 1fr 0.9fr;
+            row-gap: 0;
+        }
+
+        .side-filters-title {
+            grid-column: 1/-1;
+
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+
+        .side-filters-price {
+            grid-column: 2;
+
+            h2 {
+                margin-top: 5px;
+            }
+        }
+
+        .side-filters-categories {
+            grid-column: 1;
+            grid-row: 2;
+            grid-template-columns: repeat(2, 1fr);
+
+            div:last-child {
+                grid-column: 1/-1;
+            }
+        }
     }
 
     .product-list-cont {

@@ -1,19 +1,29 @@
 .side-filters-cont {
     position: fixed;
-    height: 83.4%;
-    width: 300px;
+    height: calc(83.4% - 72px);
+    width: 264px;
     border-radius: 15px;
     background-color: #aea4fa;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
+    row-gap: 4%;
+    padding: 36px 18px;
+
+    .side-filters-title {
+        font-size: 26px;
+        color: white;
+        width: 100%;
+
+        svg {
+            display: none;
+        }
+    }
 }
 
 .side-filters-price {
     display: grid;
     column-gap: 18px;
-    margin: 0 18px;
     grid-template-columns: 1fr 1fr;
 
     h2 {
@@ -86,8 +96,16 @@
 }
 
 .side-filters-categories {
-    width: calc(100% - 36px);
-    padding: 0 18px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    font-size: 18px;
+    width: 100%;
+
+    .categories-title {
+        font-size: 1.4em;
+        grid-column: 1/-1;
+        margin-bottom: 6px;
+    }
 
     div {
         cursor: pointer;

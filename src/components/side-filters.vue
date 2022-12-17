@@ -1,7 +1,16 @@
 
 <template>
-    <section class="side-filters-layout">
+    <section :class="[isBigCmp ? 'side-filters-big-layout' : '', 'side-filters-layout']">
         <section class="side-filters-cont">
+            <div class="side-filters-title" @click="isBigCmp = !isBigCmp">Costum Filters
+                <svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision"
+                    text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd"
+                    clip-rule="evenodd" viewBox="0 0 512.02 319.26">
+                    <path
+                        d="M5.9 48.96 48.97 5.89c7.86-7.86 20.73-7.84 28.56 0l178.48 178.48L434.5 5.89c7.86-7.86 20.74-7.82 28.56 0l43.07 43.07c7.83 7.84 7.83 20.72 0 28.56l-192.41 192.4-.36.37-43.07 43.07c-7.83 7.82-20.7 7.86-28.56 0l-43.07-43.07-.36-.37L5.9 77.52c-7.87-7.86-7.87-20.7 0-28.56z" />
+                </svg>
+                <!-- <img src="../assets/imgs/arrow-down-icon.svg" /> -->
+            </div>
             <section class="side-filters-price">
                 <h2>Price Range</h2>
                 <div class="min-price-inputs">
@@ -18,7 +27,7 @@
                 </div>
             </section>
             <section class="side-filters-categories">
-                <div @click="setFilter(true, true)">categories</div>
+                <div @click="setFilter(true, true)" class="categories-title">categories</div>
                 <div v-for="(category, idx) in this.categories" @click.prevent="setFilter(category);" :key="idx + 7"
                     :class="filter.category === category ? 'selected-category' : ''">
                     {{ category }}
@@ -32,17 +41,13 @@
             </section>
         </section>
     </section>
-    <section class="side-filters-layout-mobile" v-if="isBigCmp">
-        <section class="side-filters-cont-mobile">
-        </section>
-    </section>
 </template>
 <script>
 
 export default {
     data() {
         return {
-            categories: ["art & decoration", "jewelry", "hobbies", "gadgets", "watches"],
+            categories: ["jewelry", "hobbies", "gadgets", "watches", "art & decoration"],
             isBigCmp: false,
             filter: { category: '', price: { min: 0, max: 150, } },
         }
