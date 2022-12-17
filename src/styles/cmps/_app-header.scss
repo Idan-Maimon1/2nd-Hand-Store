@@ -45,11 +45,18 @@
     }
 }
 
-.black-outline .header-logo-cont {
-    justify-content: unset;
+.black-outline {
 
-    div {
-        display: block;
+    .header-logo-cont {
+        justify-content: unset;
+
+        div {
+            display: block;
+        }
+    }
+
+    .search-bar-cont {
+        display: none;
     }
 }
 

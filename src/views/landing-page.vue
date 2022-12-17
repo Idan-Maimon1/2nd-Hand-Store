@@ -9,7 +9,7 @@
         </div>
         <div class="landing-page-main-content">
             <div>
-                2ndHand<br><span> Cheap prices <br>High quality</span>
+                2ndHand<br><span> Cheap prices<br>High quality</span>
             </div>
             <button class="landing-page-btn" @click="showProductsPage()">
                 Check it out <img src="../assets/imgs/right-arrow.svg"></button>

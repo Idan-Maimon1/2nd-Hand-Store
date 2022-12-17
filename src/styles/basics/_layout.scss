@@ -28,6 +28,13 @@
     .product-list-cont {
         grid-template-columns: repeat(5, 1fr);
     }
+    .search-bar-cont input {
+        width: 400px;
+    }
+    
+    .search-results-cont {
+        width: 429px;
+    }
 }
 
 @media screen and (max-width:1168px) {
@@ -415,6 +422,12 @@
         bottom: -5.5%;
         left: 25%;
         width: 50%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .side-filters-categories {
+        font-size: 14px;
     }
 }
 
