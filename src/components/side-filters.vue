@@ -39,6 +39,7 @@
                     </svg>
                 </div>
             </section>
+            <img class="filters-bottom-img" src="../assets/imgs/filters-bottom.svg" alt="">
         </section>
     </section>
 </template>

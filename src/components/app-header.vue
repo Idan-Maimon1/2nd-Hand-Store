@@ -1,7 +1,7 @@
 
 <template>
     <section class="app-header-layout">
-        <section
+        <section v-if="this.$route.path !== '/'"
             :class="[this.$route.name === 'product-details' ? 'black-outline' : '', 'app-header-cont', 'grid-layout']">
             <section class="header-logo-cont pointer" @click.prevent="showLandingPage()">
                 <img src="/trade-icon.svg" alt="">
