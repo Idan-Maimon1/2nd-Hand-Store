@@ -16,7 +16,7 @@
 }
 
 .header-logo-cont {
-    color: #4d5964;
+    color: black;
     display: flex;
     padding-left: 2px;
     align-items: center;
@@ -41,7 +41,7 @@
 
     span {
         font-size: 1.15em;
-        color: #896cfd;
+        color: $clr1;
     }
 }
 
@@ -100,7 +100,7 @@
         margin-left: -17.5px;
         height: 30px;
         aspect-ratio: 1/1;
-        background-color: rgb(174, 164, 250);
+        background-color: $clr1;
         transition: 500ms;
 
         &:hover {

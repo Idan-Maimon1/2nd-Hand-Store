@@ -6,7 +6,7 @@
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background: #aea4fa;
+  background: $clr1;
   display: flex;
   align-items: center;
 
@@ -21,9 +21,9 @@
       line-height: 1;
       font-weight: bold;
       letter-spacing: 2px;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       padding-left: 40px;
-      -webkit-text-stroke: 2.5px rgba(0, 0, 0, 0.685);
+      -webkit-text-stroke: 2.5px rgb(0 0 0);
 
       span {
         font-size: 0.6em;
@@ -36,9 +36,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  fill: WHITE;
+  fill: black;
   stroke-width: 1.5px;
-  stroke: black;
+  stroke: white;
   width: 50vmax;
   z-index: -1;
   animation: blobMove 10s ease-in-out infinite;

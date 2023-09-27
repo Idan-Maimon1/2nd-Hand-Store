@@ -23,11 +23,13 @@
 
 .product-date {
     position: absolute;
-    font-size: 1em;
+    font-family: sans-serif;
+    font-size: 0.7em;
     top: -25px;
-    color: white;
+    font-weight: 600;
+    color: black;
     text-align: center;
-    background: rgb(160 138 245);
+    background: $clr1;
     width: 100%;
     transition: 350ms;
 }

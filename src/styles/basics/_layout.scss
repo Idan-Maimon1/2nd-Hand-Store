@@ -235,7 +235,6 @@
         position: unset;
         padding: 0 18px;
         transition: 0.1s;
-        outline: 0px;
 
         .side-filters-title {
             display: flex;
@@ -247,8 +246,8 @@
             svg {
                 display: block;
                 height: 14px;
-                fill: white;
-                stroke: white;
+                fill: black;
+                stroke: black;
                 transition: 0.3s;
             }
         }
@@ -296,8 +295,16 @@
             grid-row: 2;
             grid-template-columns: repeat(2, 1fr);
 
-            div:last-child {
-                grid-column: 1/-1;
+            div {
+                color: #4d4646;
+
+                &:first-child {
+                    color: black;
+                }
+
+                &:last-child {
+                    grid-column: 1/-1;
+                }
             }
         }
     }
@@ -459,5 +466,9 @@
 
     .search-bar-cont input {
         min-width: 50vw;
+    }
+
+    .contact-seller {
+        background-color: #c5ff00db;
     }
 }
